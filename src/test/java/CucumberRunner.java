@@ -13,7 +13,7 @@ public class CucumberRunner {
 //This will run all feature files together
     @Test
     public void testParallel(){
-        String karateOutputPath = "target/cucumber-html-reports";
+        String karateOutputPath = "target/surefire-reports";
         KarateStats stats = com.intuit.karate.cucumber.CucumberRunner.parallel(getClass(), 10, karateOutputPath);
         assertTrue("there are scenario failures", stats.getFailCount() == 0);
 

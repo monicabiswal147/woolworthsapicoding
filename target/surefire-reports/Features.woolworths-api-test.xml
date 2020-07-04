@@ -1,5 +1,5 @@
-<testsuite failures="0" name="Features/woolworths-api-test.feature" skipped="0" tests="7" time="9.445026">
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1950 When:  I retrieve the circuit list for that season Then:  there should be 7 circuits in the list returned" time="1.361753">
+<testsuite failures="0" name="Features/woolworths-api-test.feature" skipped="0" tests="7" time="17.388868">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1950 When:  I retrieve the circuit list for that season Then:  there should be 7 circuits in the list returned" time="2.475238">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed
@@ -8,7 +8,7 @@ Then status 200 ........................................................... pass
 * print 'The Race Array as follows: ', RaceArray .......................... passed
 And match RaceArray count(//Race[@season='1950']/Circuit/CircuitName) == 7 . passed</system-out>
   </testcase>
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1966 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned" time="1.344526">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1966 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned" time="2.478259">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed
@@ -24,7 +24,7 @@ Then status 200 ........................................................... pass
 * print 'The Race Array as follows: ', RaceArray .......................... passed
 And match RaceArray count(//Race[@season='1966']/Circuit/CircuitName) == 0 . passed</system-out>
   </testcase>
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 2017 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned" time="1.344438">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 2017 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned" time="2.501044">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed
@@ -47,7 +47,7 @@ Then status 200 ........................................................... pass
 * print 'The Race Array as follows: ', RaceArray .......................... passed
 And match RaceArray count(//Race[@season='2017']/Circuit/CircuitName) == 0 . passed</system-out>
   </testcase>
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 2016 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned" time="1.341519">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 2016 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned" time="2.491784">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed
@@ -77,7 +77,7 @@ Then status 200 ........................................................... pass
 * print 'The Race Array as follows: ', RaceArray .......................... passed
 And match RaceArray count(//Race[@season='2016']/Circuit/CircuitName) == 0 . passed</system-out>
   </testcase>
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1951 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned" time="1.36882">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1951 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned" time="2.450213">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed
@@ -114,7 +114,7 @@ Then status 200 ........................................................... pass
 * print 'The Race Array as follows: ', RaceArray .......................... passed
 And match RaceArray count(//Race[@season='1951']/Circuit/CircuitName) == 8 . passed</system-out>
   </testcase>
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1952 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned" time="1.34056">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1952 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned" time="2.491335">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed
@@ -158,7 +158,7 @@ Then status 200 ........................................................... pass
 * print 'The Race Array as follows: ', RaceArray .......................... passed
 And match RaceArray count(//Race[@season='1952']/Circuit/CircuitName) == 8 . passed</system-out>
   </testcase>
-  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1953 When:  I retrieve the circuit list for that season Then:  there should be 7 circuits in the list returned" time="1.343409">
+  <testcase classname="Features.woolworths-api-test" name="Check the number of races in a season Given: I want to know the number of Formula One races in 1953 When:  I retrieve the circuit list for that season Then:  there should be 7 circuits in the list returned" time="2.500995">
     <system-out>Given url baseUrl ......................................................... passed
 And path '/api/f1' ........................................................ passed
 When method GET ........................................................... passed

@@ -1,19 +1,20 @@
-19:36:34.540 ============================================================= 
-19:36:34.601 Scenario Name: Check the number of races in a season Given: I want to know the number of Formula One races in 1951 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned 
-19:36:34.602 Feature File Name: woolworths-api-test.feature 
-19:36:34.833 request:
+20:09:37.993 found scenario at line: 23 - ^Check the number of races in a season Given\: I want to know the number of Formula One races in .* When\:  I retrieve the circuit list for that season Then\:  there should be .* circuits in the list returned$
+20:09:38.003 ============================================================= 
+20:09:38.004 Scenario Name: Check the number of races in a season Given: I want to know the number of Formula One races in 1966 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned 
+20:09:38.005 Feature File Name: woolworths-api-test.feature 
+20:09:38.007 request:
 1 > GET http://ergast.com/api/f1
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: ergast.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
 
-19:36:35.898 response time in milliseconds: 1057.23
+20:09:38.729 response time in milliseconds: 715.50
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < Connection: close
 1 < Content-Type: application/xml; charset=utf-8
-1 < Date: Sat, 04 Jul 2020 10:18:23 GMT
+1 < Date: Sat, 04 Jul 2020 10:51:27 GMT
 1 < Server: Apache/2.2.15 (CentOS)
 1 < Transfer-Encoding: chunked
 1 < X-Powered-By: PHP/5.3.3
@@ -355,7 +356,7 @@
 </MRData>
 
 
-19:36:35.994 [print] The Race Array as follows:  {
+20:09:38.744 [print] The Race Array as follows:  {
   "RaceTable": {
     "Race": [
       {

@@ -1,7 +1,5 @@
 @CircuitsApi
-Feature: In order to impress my friends
-  As a Formula 1 fan
-  I want to know the number of races for a given Formula 1 season
+Feature: As a Formula 1 fan, I want to know the number of races for a given Formula 1 season
 
 
   @Test1
