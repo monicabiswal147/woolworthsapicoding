@@ -26,6 +26,7 @@ presenting your solution.
 ## Getting Started
 
 Refer the GitHub url to clone the project -https://github.com/monicabiswal147/woolworthsapicoding.git
+
 The project framework is designed using Karate DSL, Maven along with Junit runner.
 The Reports generated are Cucumber HTML Reports.
 
