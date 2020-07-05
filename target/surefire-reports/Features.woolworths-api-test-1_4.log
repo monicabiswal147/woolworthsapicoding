@@ -1,19 +1,19 @@
-20:12:20.265 ============================================================= 
-20:12:20.328 Scenario Name: Check the number of races in a season Given: I want to know the number of Formula One races in 2016 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned 
-20:12:20.332 Feature File Name: woolworths-api-test.feature 
-20:12:20.538 request:
+15:44:28.895 ============================================================= 
+15:44:28.955 Scenario Name: Check the number of races in a season Given: I want to know the number of Formula One races in 2016 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned 
+15:44:28.960 Feature File Name: woolworths-api-test.feature 
+15:44:29.181 request:
 1 > GET http://ergast.com/api/f1
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: ergast.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
 
-20:12:22.818 response time in milliseconds: 2252.09
+15:44:30.661 response time in milliseconds: 1428.36
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < Connection: close
 1 < Content-Type: application/xml; charset=utf-8
-1 < Date: Sat, 04 Jul 2020 10:54:10 GMT
+1 < Date: Sun, 05 Jul 2020 06:26:18 GMT
 1 < Server: Apache/2.2.15 (CentOS)
 1 < Transfer-Encoding: chunked
 1 < X-Powered-By: PHP/5.3.3

@@ -1,0 +1,4608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @Test1</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>woolworthsapicodingchallenge</td>
+            <td>05 Jul 2020, 16:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Test1</td>
+                    <td      class="passed"    >70</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">70</td>
+
+          <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="11055516957">11s 055ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 894ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 1950 When:  I retrieve the circuit list for that season Then:  there should be 7 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 766ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:08:20.334 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:21.873 response time in milliseconds: 1473.37
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:09 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">042ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '1950'</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">021ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">030ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='1950']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='1950']/Circuit/CircuitName) == 7</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 890ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 1966 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 766ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:08:20.335 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:21.852 response time in milliseconds: 1454.92
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:09 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">044ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '1966'</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='1966']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='1966']/Circuit/CircuitName) == 0</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 896ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 2017 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 766ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:08:20.334 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:21.848 response time in milliseconds: 1456.72
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:09 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">042ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '2017'</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">018ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='2017']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='2017']/Circuit/CircuitName) == 0</span>
+  
+  <span class="lead-duration duration">022ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 916ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 2016 When:  I retrieve the circuit list for that season Then:  there should be 0 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 766ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>16:08:20.337 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:21.865 response time in milliseconds: 1453.73
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:09 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">045ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '2016'</span>
+  
+  <span class="lead-duration duration">010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">069ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='2016']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='2016']/Circuit/CircuitName) == 0</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 896ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 1951 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 766ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>16:08:20.335 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:21.868 response time in milliseconds: 1486.69
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:09 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">043ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '1951'</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">020ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='1951']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='1951']/Circuit/CircuitName) == 8</span>
+  
+  <span class="lead-duration duration">020ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">803ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 1952 When:  I retrieve the circuit list for that season Then:  there should be 8 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">785ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>16:08:22.048 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:22.825 response time in milliseconds: 769.30
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:10 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '1952'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='1952']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='1952']/Circuit/CircuitName) == 8</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Features-woolworths-api-test-feature.html">Features/woolworths-api-test.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Test1.html">@Test1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">758ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Check the number of races in a season Given: I want to know the number of Formula One races in 1953 When:  I retrieve the circuit list for that season Then:  there should be 7 circuits in the list returned</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/f1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">736ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>16:08:22.049 request:
+1 &gt; GET http://ergast.com/api/f1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: ergast.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_232)
+
+16:08:22.779 response time in milliseconds: 723.22
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: close
+1 &lt; Content-Type: application/xml; charset=utf-8
+1 &lt; Date: Sun, 05 Jul 2020 06:50:10 GMT
+1 &lt; Server: Apache/2.2.15 (CentOS)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Powered-By: PHP/5.3.3
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;/schemas/mrd-1.4.xsl&quot;?&gt;
+&lt;MRData xmlns=&quot;http://ergast.com/mrd/1.4&quot; series=&quot;f1&quot; url=&quot;http://ergast.com/api/f1&quot; limit=&quot;30&quot; offset=&quot;0&quot; total=&quot;1026&quot;&gt;
+	&lt;RaceTable&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1950_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-13&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Monaco_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Monaco Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monaco&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Monaco&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Monaco&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;43.7347&quot; long=&quot;7.42056&quot;&gt;
+					&lt;Locality&gt;Monte-Carlo&lt;/Locality&gt;
+					&lt;Country&gt;Monaco&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-04&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-06-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1950_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-07-02&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1950&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1950_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1950-09-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-27&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-06-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1951_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-01&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1951_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-14&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1951_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-07-29&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-09-16&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1951&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1951_Spanish_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Spanish Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;pedralbes&quot; url=&quot;http://en.wikipedia.org/wiki/Pedralbes_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Pedralbes&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;41.3903&quot; long=&quot;2.11667&quot;&gt;
+					&lt;Locality&gt;Barcelona&lt;/Locality&gt;
+					&lt;Country&gt;Spain&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1951-10-28&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Swiss_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Swiss Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;bremgarten&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Bremgarten&quot;&gt;
+				&lt;CircuitName&gt;Circuit Bremgarten&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;46.9589&quot; long=&quot;7.40194&quot;&gt;
+					&lt;Locality&gt;Bern&lt;/Locality&gt;
+					&lt;Country&gt;Switzerland&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-06-22&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1952_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;essarts&quot; url=&quot;http://en.wikipedia.org/wiki/Rouen-Les-Essarts&quot;&gt;
+				&lt;CircuitName&gt;Rouen-Les-Essarts&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.3306&quot; long=&quot;1.00458&quot;&gt;
+					&lt;Locality&gt;Rouen&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-06&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1952_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-07-19&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1952_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-03&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-08-17&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1952&quot; round=&quot;8&quot; url=&quot;http://en.wikipedia.org/wiki/1952_Italian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Italian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;monza&quot; url=&quot;http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza&quot;&gt;
+				&lt;CircuitName&gt;Autodromo Nazionale di Monza&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;45.6156&quot; long=&quot;9.28111&quot;&gt;
+					&lt;Locality&gt;Monza&lt;/Locality&gt;
+					&lt;Country&gt;Italy&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1952-09-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;1&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Argentine_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Argentine Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;galvez&quot; url=&quot;http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez&quot;&gt;
+				&lt;CircuitName&gt;Aut&oacute;dromo Juan y Oscar G&aacute;lvez&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;-34.6943&quot; long=&quot;-58.4593&quot;&gt;
+					&lt;Locality&gt;Buenos Aires&lt;/Locality&gt;
+					&lt;Country&gt;Argentina&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-01-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;2&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Indianapolis_500&quot;&gt;
+			&lt;RaceName&gt;Indianapolis 500&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;indianapolis&quot; url=&quot;http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway&quot;&gt;
+				&lt;CircuitName&gt;Indianapolis Motor Speedway&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;39.795&quot; long=&quot;-86.2347&quot;&gt;
+					&lt;Locality&gt;Indianapolis&lt;/Locality&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-05-30&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;3&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Dutch_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Dutch Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;zandvoort&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_Zandvoort&quot;&gt;
+				&lt;CircuitName&gt;Circuit Park Zandvoort&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.3888&quot; long=&quot;4.54092&quot;&gt;
+					&lt;Locality&gt;Zandvoort&lt;/Locality&gt;
+					&lt;Country&gt;Netherlands&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-07&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;4&quot; url=&quot;http://en.wikipedia.org/wiki/1953_Belgian_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;Belgian Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;spa&quot; url=&quot;http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps&quot;&gt;
+				&lt;CircuitName&gt;Circuit de Spa-Francorchamps&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.4372&quot; long=&quot;5.97139&quot;&gt;
+					&lt;Locality&gt;Spa&lt;/Locality&gt;
+					&lt;Country&gt;Belgium&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-06-21&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;5&quot; url=&quot;http://en.wikipedia.org/wiki/1953_French_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;French Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;reims&quot; url=&quot;http://en.wikipedia.org/wiki/Reims-Gueux&quot;&gt;
+				&lt;CircuitName&gt;Reims-Gueux&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;49.2542&quot; long=&quot;3.93083&quot;&gt;
+					&lt;Locality&gt;Reims&lt;/Locality&gt;
+					&lt;Country&gt;France&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-05&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;6&quot; url=&quot;http://en.wikipedia.org/wiki/1953_British_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;British Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;silverstone&quot; url=&quot;http://en.wikipedia.org/wiki/Silverstone_Circuit&quot;&gt;
+				&lt;CircuitName&gt;Silverstone Circuit&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;52.0786&quot; long=&quot;-1.01694&quot;&gt;
+					&lt;Locality&gt;Silverstone&lt;/Locality&gt;
+					&lt;Country&gt;UK&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-07-18&lt;/Date&gt;
+		&lt;/Race&gt;
+		&lt;Race season=&quot;1953&quot; round=&quot;7&quot; url=&quot;http://en.wikipedia.org/wiki/1953_German_Grand_Prix&quot;&gt;
+			&lt;RaceName&gt;German Grand Prix&lt;/RaceName&gt;
+			&lt;Circuit circuitId=&quot;nurburgring&quot; url=&quot;http://en.wikipedia.org/wiki/N%C3%BCrburgring&quot;&gt;
+				&lt;CircuitName&gt;N&uuml;rburgring&lt;/CircuitName&gt;
+				&lt;Location lat=&quot;50.3356&quot; long=&quot;6.9475&quot;&gt;
+					&lt;Locality&gt;N&uuml;rburg&lt;/Locality&gt;
+					&lt;Country&gt;Germany&lt;/Country&gt;
+				&lt;/Location&gt;
+			&lt;/Circuit&gt;
+			&lt;Date&gt;1953-08-02&lt;/Date&gt;
+		&lt;/Race&gt;
+	&lt;/RaceTable&gt;
+&lt;/MRData&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RaceArray = $response//RaceTable</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def allSeasons = get RaceArray.RaceTable.Race[*].@.season</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def currentSeason = '1953'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expect = read('classpath:Season.js')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedValue = expect(currentSeason,allSeasons)</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match //Race[@season='1953']/Circuit/CircuitName == expectedValue</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response count(//Race[@season='1953']/Circuit/CircuitName) == 7</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
